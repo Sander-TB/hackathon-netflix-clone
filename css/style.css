@@ -87,7 +87,7 @@ header {
   display: inline;
 }
 
-input {
+.search-input {
   padding: 5px;
   margin-top: 8px;
   font-size: 17px;
@@ -106,20 +106,48 @@ input {
   grid-template-columns: repeat(6, minmax(100px, 1fr));
 }
 
-/* .box a {
-  transition: transform .3s;
+/* DETAILS */
+
+/* CONTACT */
+#contactForm input {
+  padding: 0.5em;
+  margin-top: 30px;
+  font-size: 17px;
+  border: none;
+  text-align: center;
+  width: 70%;
 }
 
-.box a:hover {
-  transition: transform .3s;
-  -ms-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+/* FORM */
+
+.form-error {
+  color: var(--error);
+  font-size: 14px;
+  margin-top: 3px;
+  display: none;
 }
 
-.box img {
-  border-radius: 2px;
-} */
+#contactForm {
+  text-align: center;
+  padding: 1.5em;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  font-size: 30px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  color: var(--light);
+  background: var(--dark);
+  font-weight: 300;
+  cursor: pointer;
+}
+
 
 /* FOOTER */
 footer {
