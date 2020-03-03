@@ -15,14 +15,30 @@ fetch(API_URL)
     console.log(error);
   });
 
-function renderDetails() {
-  console.dir(json);
-}
+fetch(API_EPISODES)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    renderEpisodes(json);
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
 
-function renderEpisodes() {
-  console.dir(json);
-}
+fetch(API_SEASONS)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    renderSeasons(json);
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
 
-function renderSeasons() {
-  console.dir(json);
-}
+function renderDetails() {}
+
+function renderEpisodes() {}
+
+function renderSeasons() {}
